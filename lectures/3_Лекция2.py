@@ -30,4 +30,4 @@ if menu == 'Обратные задачи математической физи�
 
 		st.markdown(pdf_display, unsafe_allow_html=True)
 
-	displayPDF('../Archive/Lecture2/InverseLecture2.pdf')
+	displayPDF('archive/InverseLecture2.pdf')
