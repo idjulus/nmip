@@ -13,6 +13,13 @@ if menu == 'Идентификация правой части':
 
 	"""
 
+	with open("archive/InverseLecture5.pdf", "rb") as file:
+		btn = st.download_button(
+			label="скачать Лекцию5",
+			data=file,
+			file_name="InverseLecture5.pdf",
+		)
+
 	def displayPDF(file):
 		with open(file,"rb") as f:
 			base64_pdf = base64.b64encode(f.read()).decode('utf-8')
@@ -23,4 +30,4 @@ if menu == 'Идентификация правой части':
 
 		st.markdown(pdf_display, unsafe_allow_html=True)
 
-	displayPDF('../Archive/Lecture5/InverseLecture5.pdf')
+	displayPDF('archive/InverseLecture5.pdf')
