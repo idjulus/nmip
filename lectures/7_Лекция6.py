@@ -13,6 +13,13 @@ if menu == 'Эволюционная обратная задача':
 
 	"""
 
+	with open("archive/InverseLecture6.pdf", "rb") as file:
+		btn = st.download_button(
+			label="скачать Лекцию6",
+			data=file,
+			file_name="InverseLecture6.pdf",
+		)
+
 	def displayPDF(file):
 		with open(file,"rb") as f:
 			base64_pdf = base64.b64encode(f.read()).decode('utf-8')
@@ -23,4 +30,4 @@ if menu == 'Эволюционная обратная задача':
 
 		st.markdown(pdf_display, unsafe_allow_html=True)
 
-	displayPDF('../Archive/Lecture6/InverseLecture6.pdf')
+	displayPDF('archive/InverseLecture6.pdf')
