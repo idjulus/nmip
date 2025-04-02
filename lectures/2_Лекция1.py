@@ -15,6 +15,14 @@ if menu == 'Корректная и некорректная задача':
 
 	"""
 
+	with open("archive/InverseLecture1.pdf", "rb") as file:
+		btn = st.download_button(
+			label="скачать МКР",
+			data=file,
+			file_name="InverseLecture1.pdf",
+			# mime="image/png",
+		)
+
 	def displayPDF(file):
 		with open(file,"rb") as f:
 			base64_pdf = base64.b64encode(f.read()).decode('utf-8')
