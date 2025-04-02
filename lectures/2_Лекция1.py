@@ -17,7 +17,7 @@ if menu == 'Корректная и некорректная задача':
 
 	with open("archive/InverseLecture1.pdf", "rb") as file:
 		btn = st.download_button(
-			label="скачать МКР",
+			label="скачать Лекцию1",
 			data=file,
 			file_name="InverseLecture1.pdf",
 			# mime="image/png",
