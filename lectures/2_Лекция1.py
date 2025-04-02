@@ -25,7 +25,7 @@ if menu == 'Корректная и некорректная задача':
 
 		st.markdown(pdf_display, unsafe_allow_html=True)
 
-	displayPDF('../Archive/Lecture1/InverseLecture1.pdf')
+	displayPDF('archive/InverseLecture1.pdf')
 
 
 if menu == 'Практика':
@@ -68,7 +68,7 @@ if menu == 'Практика':
 	r"""
 	##### Презентация по методу конечных разностей
 	"""
-	with open("../books/fdm.pdf", "rb") as file:
+	with open("books/fdm.pdf", "rb") as file:
 		btn = st.download_button(
 			label="скачать МКР",
 			data=file,
