@@ -14,6 +14,13 @@ if menu == 'Градиентные, итерационные методы':
 
 	"""
 
+	with open("archive/InverseLecture4.pdf", "rb") as file:
+		btn = st.download_button(
+			label="скачать Лекцию4",
+			data=file,
+			file_name="InverseLecture4.pdf",
+		)
+
 	def displayPDF(file):
 		with open(file,"rb") as f:
 			base64_pdf = base64.b64encode(f.read()).decode('utf-8')
@@ -24,4 +31,4 @@ if menu == 'Градиентные, итерационные методы':
 
 		st.markdown(pdf_display, unsafe_allow_html=True)
 
-	# displayPDF('../Archive/Lecture4/InverseLecture4.pdf')
+	# displayPDF('archive/InverseLecture4.pdf')
