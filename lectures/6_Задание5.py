@@ -70,12 +70,6 @@ if menu == 'Задание5':
 		$ - оператор прямой задачи
 
 		$
-		\mathcal{G}^*: v(x,t) \longrightarrow w(x,t)
-		$ - оператор сопряженной задачи
-
-
-
-		$
 		v = \mathcal{G}f_k
 		$
 		есть решение прямой задачи
@@ -86,6 +80,10 @@ if menu == 'Задание5':
 		v(x,0) &= 0, \quad 0 \le x \le l.
 		\end{aligned}
 		$$
+
+		$
+		\mathcal{G}^*: v(x,t) \longrightarrow w(x,t)
+		$ - оператор сопряженной задачи
 
 		$
 		w = \mathcal{G^*} v
