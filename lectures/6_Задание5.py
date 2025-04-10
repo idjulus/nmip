@@ -66,7 +66,7 @@ if menu == 'Задание5':
 		$$
 
 		$
-		\mathcal{G}: f(x,t) \longrightarrow u(x,t)
+		\mathcal{G}: f(x,t) \longrightarrow v(x,t)
 		$ - оператор прямой задачи
 
 		$
