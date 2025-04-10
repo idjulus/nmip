@@ -65,13 +65,13 @@ if menu == 'Задание5':
 		\tau_{k+1} = \frac{\|r_k\|^*}{\|\mathcal{G}r_k\|^*}, \qquad \text{где} \quad r_k = \mathcal{G}^*\mathcal{G}f_k - \mathcal{G}^*u_\delta
 		$$
 
-  		$
-    		\mathcal{G}: f(x,t) \longrightarrow u(x,t)
-    		$ - оператор прямой задачи
+		$
+		\mathcal{G}: f(x,t) \longrightarrow u(x,t)
+		$ - оператор прямой задачи
 
-      		$
-    		\mathcal{G}^*: v(x,t) \longrightarrow w(x,t)
-    		$ - оператор сопряженной задачи
+		$
+		\mathcal{G}^*: v(x,t) \longrightarrow w(x,t)
+		$ - оператор сопряженной задачи
 
 
 
@@ -99,7 +99,7 @@ if menu == 'Задание5':
 		\end{aligned}
 		$$
 
-  		$
+		$
 		y_\delta = \mathcal{G^*} u_\delta
 		$ - решение сопряженной задачи с $u_\delta$.
 
