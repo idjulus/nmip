@@ -65,9 +65,15 @@ if menu == 'Задание5':
 		\tau_{k+1} = \frac{\|r_k\|^*}{\|\mathcal{G}r_k\|^*}, \qquad \text{где} \quad r_k = \mathcal{G}^*\mathcal{G}f_k - \mathcal{G}^*u_\delta
 		$$
 
-		$
-		y_\delta = \mathcal{G^*} u_\delta
-		$
+  		$
+    		\mathcal{G}: f(x,t) \longrightarrow u(x,t)
+    		$ - оператор прямой задачи
+
+      		$
+    		\mathcal{G}^*: v(x,t) \longrightarrow w(x,t)
+    		$ - оператор сопряженной задачи
+
+
 
 		$
 		v = \mathcal{G}f_k
@@ -84,7 +90,7 @@ if menu == 'Задание5':
 		$
 		w = \mathcal{G^*} v
 		$
-		есть решение прямой задачи
+		есть решение прямой (сопряженной) задачи
 		$$
 		\begin{aligned}
 		- \frac{\partial w}{\partial t} - \frac{\partial^2 w}{\partial x^2} &= v(x,t), \\
@@ -93,9 +99,13 @@ if menu == 'Задание5':
 		\end{aligned}
 		$$
 
-		$r_k = w - y_\delta$.
+  		$
+		y_\delta = \mathcal{G^*} u_\delta
+		$ - решение сопряженной задачи с $u_\delta$.
 
-		$\mathcal{G} r_k$ есть решение аналогичной прямой задачи.
+		$r_k = w - y_\delta$ - невязка.
+
+		$\mathcal{G} r_k$ есть решение прямой задачи c $r_k$.
 
 		---
 		1. Найти точное решение $u(x,t)$ при заданной правой части, добавить шум;
