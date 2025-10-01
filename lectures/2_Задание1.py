@@ -48,7 +48,7 @@ if menu == 'Задание1':
 	r"""
 	##### Презентация по методу конечных разностей
 	"""
-	with open("../books/fdm.pdf", "rb") as file:
+	with open("./books/fdm.pdf", "rb") as file:
 		btn = st.download_button(
 			label="скачать МКР",
 			data=file,
